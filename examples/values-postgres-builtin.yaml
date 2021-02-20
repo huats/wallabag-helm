@@ -1,0 +1,29 @@
+wallabag:
+  database:
+    builtIn:
+      postgresql:
+        enabled: true
+    env:
+      driver: "pdo_pgsql"
+      host: "wallabag-postgresql"
+      name: "wallabag"
+      password: "wallabag-pass"
+      port: "5432"
+      user: "wallabag"
+  postgresql_admin_password: "wallabag-adminpass"
+  postgresql_admin_user: "postgres"
+  domain_name: https://your-wallabag-url-instance.com
+  server_name: "Your wallabag server"
+
+postgresql:
+  global:
+    postgresql:
+      servicePort: 5432
+  postgresqlPostgresPassword: "wallabag-adminpass"
+  postgresqlUsername: "postgres"
+  postgresqlPassword: "wallabag-adminpass"
+  persistence:
+    size: 3Gi
+    storageClass: default
+  volumePermissions:
+    enabled: true

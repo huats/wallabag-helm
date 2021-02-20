@@ -1,0 +1,16 @@
+wallabag:
+  database: 
+    builtIn: 
+      sqlite: 
+        enabled: true
+    env:
+      driver: "pdo_sqlite"
+  domain_name: https://your-wallabag-url-instance.com
+  server_name: "Your wallabag instance"
+
+sqlite:
+  persistence:
+    enabled: true
+    size: 3Gi
+    storageClass: default
+    accessMode: ReadWriteOnce

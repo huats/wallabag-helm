@@ -1,0 +1,27 @@
+wallabag:
+  database:
+    builtIn:
+      mariadb:
+        enabled: true
+    env:
+      driver: "pdo_mysql"
+      host: "wallabag-mariadb"
+      name: "wallabag"                                                           
+      password: "wallabag-pass"                                                           
+      port: "3306"                                                           
+      user: "wallabag"                                                         
+  mysql_root_password: "wallabag-rootpass"
+  domain_name: https://your-wallabag-url-instance.com
+  server_name: "Your wallabag server"
+
+mariadb:                                                                        
+  auth:                                                                         
+    rootPassword: "wallabag-rootpass"
+  primary:                                                                      
+    service:                                                                    
+      port: 3306                                                                
+    persistence:                                                                
+      size: 2Gi
+      storageClass: default
+  volumePermissions:
+    enabled: true
