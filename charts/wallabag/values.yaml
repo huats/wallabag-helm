@@ -124,7 +124,7 @@ wallabag:
 
 sqlite:
   persistence:
-    enabled: true
+    enabled: false
     size: 3Gi
     accessMode: ReadWriteOnce
     storageClass: default
