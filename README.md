@@ -16,7 +16,7 @@ This [Helm](https://github.com/kubernetes/helm) chart installs [wallabag](https:
 ### Add Helm repository
 
 ```bash
-helm repo add wallabag https://github.com/huats/wallabag-helm
+helm repo add wallabag https://huats.github.io/wallabag-helm/ 
 ```
 
 ### Configure the chart
