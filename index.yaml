@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  wallabag:
+  - apiVersion: v2
+    appVersion: 2.4.1
+    created: "2021-02-21T05:15:51.673253351Z"
+    dependencies:
+    - condition: wallabag.database.builtIn.postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.7.2
+    - condition: wallabag.database.builtIn.mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.0.0
+    description: A Helm chart for Kubernetes
+    digest: 933fba70e141ef1de09b9ba723807832e403e841b16d92de4cd9ddc8f0ccbae5
+    maintainers:
+    - email: christophe.sauthier@gmail.com
+      name: Christophe Sauthier
+    name: wallabag
+    type: application
+    urls:
+    - https://github.com/huats/wallabag-helm/releases/download/wallabag-0.1.0/wallabag-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-02-21T05:15:51.673268651Z"
