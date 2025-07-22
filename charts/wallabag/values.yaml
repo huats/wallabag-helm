@@ -96,6 +96,8 @@ wallabag:
       # port: ""
       # user: root
     populate: True
+  # Annotations to add to the config map
+  annotations: {}
   fosuser:
     confirmation: true
     registration: true
